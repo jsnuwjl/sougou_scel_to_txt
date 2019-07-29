@@ -7,7 +7,7 @@ import time
 from multiprocessing.dummy import Pool as ThreadPool
 from selenium import webdriver
 def get_file_with_chorme(url):
-    driver = webdriver.Chrome(r'C:\Users\jx\AppData\Local\Google\Chrome\Application\chromedriver.exe')
+    driver = webdriver.Chrome()
     driver.get(url)
     time.sleep(10)
     driver.quit()
